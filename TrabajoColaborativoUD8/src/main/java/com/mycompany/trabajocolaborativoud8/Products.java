@@ -82,6 +82,11 @@ public class Products implements Comparable{
         final Products other = (Products) obj;
         return Objects.equals(this.productId, other.productId);
     }
+
+    @Override
+    public String toString() {
+        return "Products{" + "productId=" + productId + ", categoryId=" + categoryId + ", productName=" + productName + ", description=" + description + ", standardCost=" + standardCost + ", listPrice=" + listPrice + '}';
+    }
     
     
     
