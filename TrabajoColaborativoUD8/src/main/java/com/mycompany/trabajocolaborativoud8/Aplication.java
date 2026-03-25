@@ -15,6 +15,13 @@ public class Aplication {
             
             //map.filet.distinct.forEach
             
+            lista.stream()
+                    .filter(e -> e.getStandardCost() > 600)
+                    .map(e -> e.getProductName())
+                    .distinct()
+                    .forEach(System.out::println);
+            
+            
             //filter.sorted.limit.forEach
             
             //sorted.filter.forEach
