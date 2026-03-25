@@ -80,7 +80,7 @@ public class Aplication {
             System.out.println("-----------------------------");
             
             double sumaCostesIDPares = lista.stream()
-                    .filter(e -> e.getCategoryId()%2 == 0)
+                    .filter(e -> e.getProductId()%2 == 0)
                     .map(e -> e.getStandardCost())
                     .reduce(0.0, (suma, elem) -> suma + elem);
             
